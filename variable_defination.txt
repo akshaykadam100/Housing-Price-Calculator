@@ -1,0 +1,31 @@
+ordinal_features = ['Street', 'Alley', 'LotShape', 'Utilities', 'LandSlope', 'ExterQual', 
+                    'LandContour', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 
+                    'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'CentralAir', 
+                    'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType',
+                    'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 
+                    'Fence'] 
+
+
+categorical_features = ['LotConfig', 'Neighborhood', 'Condition1', 'Condition2', 
+                        'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 
+                        'MasVnrType', 'Foundation', 'Heating', 'MiscFeature',
+                        'SaleType', 'SaleCondition', 'MSZoning', 'BldgType']
+
+
+
+##############################################################################################################################
+
+
+continuous_variables = ['LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd']
+
+
+
+categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LandSlope']
+
+
+
+categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'Condition2', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType']
+
+
+
+Confusing Between Categorical Ordinal / Nominal: BldgType', HouseStyle
