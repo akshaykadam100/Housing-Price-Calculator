@@ -40,3 +40,7 @@ Queries:
 2. Neighbourhood: Need to encode only top 10 values
 
 3. HouseStyle: Confused with this variable. Seems like there is certain prder in this. (Ask Rushi dada)
+
+4. Exterior1st: Need to encode only top 10 values
+
+5. Exterior2nd: Need to encode only top 10 values

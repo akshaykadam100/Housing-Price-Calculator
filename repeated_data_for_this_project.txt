@@ -1,4 +1,4 @@
-#### Building Type varibale do not hold any order. So, this variable can be used as Categorical Nominal Variable
+#### Building Type variable do not hold any order. So, this variable can be used as Categorical Nominal Variable
 
 #### Being a categorical ordinal variable, following values will be imputed
 
@@ -7,10 +7,18 @@
 #### From the above correlation value, we can somehow be clear that Lot Frontage Size somehow impact price of the house
 #### From the above correlation value, we can somehow be clear that Lot Shape somehow impact price of the house, although in negative way
 
+#### From the above correlation value, we can be clear that Lot Frontage Size impacts price of the house significantly
+
+#### This variable can be considered as continuous variable
+
 #### Correlation Co-efficient of Sale Price with this variable is not strong enough.
 
 #### For the Street Column, more than 99% of values ares same. We can say that this column will not have enough predictive power
 #### Owing to this, we can drop this column
+
+
+#### In the above variable there are more than 25 unique values. If we create dummy variable for each of this, it will result in many columns which will increase complexity and dimesnionality of the model.
+#### For this, we will encode only top 10 values and map all other values to 0
 
 
 print('Pearsons Correlation: %.2f' % np.corrcoef(raw_data.AAAAAAAA, raw_data.SalePrice)[0,1])
@@ -22,3 +30,6 @@ plot_bar_graph_from_series(data=raw_data.groupby(by='Alley').SalePrice.mean() / 
 						   
 plot_reg_graph_from_series(x_data=raw_data.LotFrontage, y_data=raw_data.SalePrice, plot_title='Lot Frontage Vs. Sale Price',
                            x_axis_label='Lot Frontage', y_axis_label='Sale Price')
+						   
+
+(============> Remaining <============)
