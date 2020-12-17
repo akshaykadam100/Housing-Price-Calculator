@@ -1,0 +1,24 @@
+#### Building Type varibale do not hold any order. So, this variable can be used as Categorical Nominal Variable
+
+#### Being a categorical ordinal variable, following values will be imputed
+
+#### This variable can be considered as categorical ordinal variable
+
+#### From the above correlation value, we can somehow be clear that Lot Frontage Size somehow impact price of the house
+#### From the above correlation value, we can somehow be clear that Lot Shape somehow impact price of the house, although in negative way
+
+#### Correlation Co-efficient of Sale Price with this variable is not strong enough.
+
+#### For the Street Column, more than 99% of values ares same. We can say that this column will not have enough predictive power
+#### Owing to this, we can drop this column
+
+
+print('Pearsons Correlation: %.2f' % np.corrcoef(raw_data.AAAAAAAA, raw_data.SalePrice)[0,1])
+
+
+plot_bar_graph_from_series(data=raw_data.groupby(by='Alley').SalePrice.mean() / 1000,
+                           plot_title='Alley Vs Average Sale Price', x_axis_label='Alley',
+                           y_axis_label='Average Sale Price (In Thousands)', data_label_rotation='horizontal')
+						   
+plot_reg_graph_from_series(x_data=raw_data.LotFrontage, y_data=raw_data.SalePrice, plot_title='Lot Frontage Vs. Sale Price',
+                           x_axis_label='Lot Frontage', y_axis_label='Sale Price')

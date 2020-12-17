@@ -29,10 +29,14 @@ categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', '
 
 
 
-categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'Heating', 'MiscFeature', 'SaleType', 'SaleCondition']
+categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'Heating', 'MiscFeature', 'SaleType', 'SaleCondition']
 
 ##############################################################################################################################
 
 Queries:
 
 1. Lot Area has 4 to 5 outliers in the upper region. Should we remove those or keep the column as it is?
+
+2. Neighbourhood: Need to encode only top 10 values
+
+3. HouseStyle: Confused with this variable. Seems like there is certain prder in this. (Ask Rushi dada)
