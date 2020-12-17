@@ -30,3 +30,9 @@ categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', '
 
 
 categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'Heating', 'MiscFeature', 'SaleType', 'SaleCondition']
+
+##############################################################################################################################
+
+Queries:
+
+1. Lot Area has 4 to 5 outliers in the upper region. Should we remove those or keep the column as it is?
