@@ -14,6 +14,8 @@
 #### In the above variable there are more than 25 unique values. If we create dummy variable for each of this, it will result in many columns which will increase complexity and dimesnionality of the model.
 #### For this, we will encode only top 10 values and map all other values to 0
 
+raw_data.AAAAAAAA = reduce_variable_categorical_nominal(raw_data.AAAAAAAA, 10)
+raw_data.AAAAAAAA.value_counts(sort=True)
 
 plot_bar_graph_from_series(data=raw_data.groupby(by='AAAAAAAA').SalePrice.mean() / 1000,
                            plot_title='AAAAAAAA Vs Average Sale Price', x_axis_label='AAAAAAAA',
