@@ -22,7 +22,7 @@ continuous_variables = ['LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 
 
 
 
-categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LandSlope', 'ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'CentralAir', 'Electrical', 'BsmtFullBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual', 'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageCars', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence']
+categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LandSlope', 'ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'CentralAir', 'Electrical', 'BsmtFullBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual', 'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageCars', 'GarageQual', 'GarageCond', 'PavedDrive']
 
 
 
@@ -44,3 +44,7 @@ Queries:
 4. Exterior1st: Need to encode only top 10 values
 
 5. Exterior2nd: Need to encode only top 10 values
+
+6. Garage Built Year: Check if the garage year actually has to be 1900 & need to handle 81 null value which states there where no garage hence has no year built data.
+
+7. Sale Type: Need to encode only top 10 values
