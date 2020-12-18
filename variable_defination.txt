@@ -5,46 +5,29 @@ ordinal_features = ['Street', 'Alley', 'LotShape', 'Utilities', 'LandSlope', 'Ex
                     'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 
                     'Fence'] 
 
-
 categorical_features = ['LotConfig', 'Neighborhood', 'Condition1', 'Condition2', 
                         'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 
                         'MasVnrType', 'Foundation', 'Heating', 'MiscFeature',
                         'SaleType', 'SaleCondition', 'MSZoning', 'BldgType']
 
+###############################################################################################
 
+continuous_variables = ['LotFrontage', 'LotArea', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'GarageYrBlt', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MonthsOld', 'SalePrice']
 
-##############################################################################################################################
+###############################################################################################
 
+categorical_ordinal_variables = ['MSSubClass', 'Alley', 'LotShape', 'LandContour', 'LandSlope', 'OverallQual', 'OverallCond', 'ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'CentralAir', 'Electrical', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual', 'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageCars', 'GarageQual', 'GarageCond', 'PavedDrive']
 
-continuous_variables = ['LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtHalfBath', 'GarageYrBlt', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'SalePrice']
+###############################################################################################
 
+categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'BldgType', 'HouseStyle', 'RoofStyle', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'SaleType', 'SaleCondition']
 
-
-
-
-categorical_ordinal_variables = ['Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LandSlope', 'ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'HeatingQC', 'CentralAir', 'Electrical', 'BsmtFullBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'KitchenQual', 'TotRmsAbvGrd', 'Functional', 'Fireplaces', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageCars', 'GarageQual', 'GarageCond', 'PavedDrive']
-
-
-
-
-
-
-categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condition1', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'Heating', 'MiscFeature', 'SaleType', 'SaleCondition']
-
-##############################################################################################################################
+###############################################################################################
 
 Queries:
 
 1. Lot Area has 4 to 5 outliers in the upper region. Should we remove those or keep the column as it is?
 
-2. Neighbourhood: Need to encode only top 10 values
-
-3. HouseStyle: Confused with this variable. Seems like there is certain prder in this. (Ask Rushi dada)
-
-4. Exterior1st: Need to encode only top 10 values
-
-5. Exterior2nd: Need to encode only top 10 values
+3. HouseStyle: Confused with this variable. Seems like there is certain order in this. (Ask Rushi dada)
 
 6. Garage Built Year: Check if the garage year actually has to be 1900 & need to handle 81 null value which states there where no garage hence has no year built data.
-
-7. Sale Type: Need to encode only top 10 values
