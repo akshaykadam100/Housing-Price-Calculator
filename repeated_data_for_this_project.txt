@@ -13,8 +13,9 @@
 #### Owing to this, we can drop this column
 
 
-#### In the above variable there are more than 25 unique values. If we create dummy variable for each of this, it will result in many columns which will increase complexity and dimesnionality of the model.
-#### For this, we will encode only top 10 values and map all other values to 0
+#### In the above variable there are 5 unique values of which last three are very scarce . We can avoid creating dummy variable for these variables, as it will result in many columns which will increase complexity and dimesnionality of the model.
+#### For this, we will encode only top 2 values and map all other values as Others
+
 
 raw_data.AAAAAAAA = reduce_variable_categorical_nominal(raw_data.AAAAAAAA, 10)
 raw_data.AAAAAAAA.value_counts(sort=True)
