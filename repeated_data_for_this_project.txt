@@ -6,6 +6,8 @@
 #### This variable can be considered as continuous variable
 
 
+#### None values are imputed as -1, because data dictionary states that null value corresponds to no fireplace due to which this value is not applicable. Therefore isntead of imputing 0, we will impute -1
+
 
 #### For the XXXXX Column, more than 99% of values ares same. We can say that this column will not have enough predictive power
 #### Owing to this, we can drop this column
