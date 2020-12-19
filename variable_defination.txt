@@ -26,8 +26,7 @@ categorical_nominal_variables = ['MSZoning', 'LotConfig', 'Neighborhood', 'Condi
 
 Queries:
 
-1. Lot Area has 4 to 5 outliers in the upper region. Should we remove those or keep the column as it is?
-
 3. HouseStyle: Confused with this variable. Seems like there is certain order in this. (Ask Rushi dada)
 
-6. Garage Built Year: Check if the garage year actually has to be 1900 & need to handle 81 null value which states there where no garage hence has no year built data.
+- 10. Sale Price / Overall Quality ==> 0.79
+- 11. Sale Price / Ground Live Area ==> 0.71
